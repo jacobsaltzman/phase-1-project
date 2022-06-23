@@ -11,6 +11,11 @@ How it works:
 Under the hood:
 Using http://colormind.io/api-access/ to generate the random color, the RGB integers will be compared against the input of the user.
 
+Three event listeners
+  -hover and alert "New color?"
+  -arrow keys to turn the dial
+  -submit guess button
+
 Future additions:
 -Score board
 -Tutorial (e.g. walking through basic colors first, like all Red)
