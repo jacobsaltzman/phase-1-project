@@ -9,7 +9,7 @@ How it works:
  Starting with a random color, users click to adjust the range of Red, Green, and Blue primary colors to guess the color values. Since there are so many (256 x 256 x 256 = 16777216) possibilities, players will obtain points based on how close they get to the original color. 
 
 Under the hood:
-Using http://colormind.io/api-access/ to generate the random color, the RGB integers will be compared against the input of the user.
+Using http://colormind.io/api-access/ to generate the random colors, the RGB integers of the user input will be compared against the randomly generating one.
 
 Three event listeners
   -alert if the colors are the same
