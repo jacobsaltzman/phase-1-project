@@ -12,7 +12,7 @@ Under the hood:
 Using http://colormind.io/api-access/ to generate the random color, the RGB integers will be compared against the input of the user.
 
 Three event listeners
-  -hover and alert "New color?"
+  -alert if the colors are the same
   -arrow keys to turn the dial
   -submit guess button
 
