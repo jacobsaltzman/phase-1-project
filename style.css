@@ -6,6 +6,7 @@ body {
 }
 h1{
   text-align: center;
+  font-family: sans-serif;
   background:
     linear-gradient(
       to right,
@@ -28,7 +29,8 @@ h1:hover {
   background-size: 0 3px, 100% 3px;
 }
 .banner{
-  overflow: visible;
+  overflow:auto;
+  font-weight: 900;
 }
 
 #red-tuner:hover {
