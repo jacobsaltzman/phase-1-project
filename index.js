@@ -1,5 +1,7 @@
-// document.addEventListener(DOMContentLoaded,
-//   getRandomColor())
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("The DOM has loaded");
+  getRandomColor();
+});
 
 //function to grab json/api data
 
@@ -24,7 +26,7 @@ http.open("POST", url, true);
 http.send(JSON.stringify(data));
 //console.log(data )
 }
-getRandomColor();
+
 
 //function to grab random color and its associated RGB and add it to the dom
 
