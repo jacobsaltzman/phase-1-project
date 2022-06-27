@@ -31,7 +31,11 @@ http.send(JSON.stringify(data));
 //function to grab random color and its associated RGB and add it to the dom
 
 //function for all three event listeners
-  //-alert for if the colors are the same
+  //-hover color change
+function changeColorOnHover(){
+  
+}
+
   //-arrow keys to turn the dial and move from Red, Green and Blue
   //-submit guess button
 

@@ -11,8 +11,8 @@ How it works:
 Under the hood:
   Using http://colormind.io/api-access/ to generate the random colors, the RGB integers of the user input will be compared against the randomly generating one.
 
-Three event listeners
-  -alert if the colors are the same
+Three event listeners:
+  -hover over banner to create color and effects
   -arrow keys to turn the dial
   -submit guess button
 

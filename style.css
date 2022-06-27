@@ -3,9 +3,27 @@ give divs for the guess and the random color a pronounced border*/
 body {
   background-color: black;
   color: white;
+ 
 }
 h1{
-  color: rgb(red, green, blue);
-
+  text-align: center;
 }
+
+.banner{
+  overflow: visible;
+}
+
+#red-tuner:hover {
+  color: red;
+}
+
+#green-tuner:hover {
+  color: green;
+}
+
+#blue-tuner:hover {
+  color: blue;
+}
+
+
 
