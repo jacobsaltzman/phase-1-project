@@ -12,7 +12,7 @@ Under the hood:
   Using http://colormind.io/api-access/ to generate the random colors, the RGB integers of the user input will be compared against the randomly generating one. 
 
 Three event listeners:
-  -hover over banner to create color and effects
+  -hover over banner to create color and effects on individual letters
   -arrow keys to turn the dial
   -submit guess button
 
@@ -27,3 +27,4 @@ Resources:
   -http://colormind.io/api-access/ (Random Color Palette API)
   -https://github.com/andrepxx/pure-knob (Knob)
   -https://css-tricks.com/css-link-hover-effects/ (Title Bar Rainbow Effect)
+  -https://codepen.io/falldowngoboone/pen/PwzPYv (Arrow Trail Effect)

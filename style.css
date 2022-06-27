@@ -21,7 +21,7 @@ h1{
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 400ms;
+  transition: background-size 100ms;
 }
 
 h1:hover {
@@ -43,5 +43,11 @@ h1:hover {
   color: blue;
 }
 
+.trail { /* className for the trail elements in mouse tail */
+  position: absolute;
+  height: 6px; width: 6px;
+  border-radius: 3px;
+  background: white
+}
 
 
