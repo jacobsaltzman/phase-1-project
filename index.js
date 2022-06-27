@@ -20,8 +20,11 @@ var http = new XMLHttpRequest();
 http.onreadystatechange = function() {
 	if(http.readyState == 4 && http.status == 200) {
 		var palette = JSON.parse(http.responseText).result;
-    console.log(palette)
-    return palette
+    // console.log(palette)
+    // return palette returns array of array values
+    const newColor = palette[0]
+    return `rbg(${newColor[0]}, ${newColor[1]}, ${newColor[2]})`
+    
 	}
 }
 
@@ -36,7 +39,7 @@ function randomColor(){
   let r = Math.floor(Math.random()*255)
   let g = Math.floor(Math.random()*255)
   let b = Math.floor(Math.random()*255)
-  console.log([r,g,b])
+  // console.log([r,g,b])
   return `rgb(${r}, ${g}, ${b})`
 }
 
@@ -54,9 +57,9 @@ function changeColorOnHover(){
   const banner = document.getElementsByClassName("banner")
   for (let i = 0; i < banner.length; i++){
   banner[i].addEventListener("mouseover", function (){
-    console.log(`Found ${banner[i].innerHTML}!`)
+    // console.log(`Found ${banner[i].innerHTML}!`)
     let newColor = randomColor()
-    console.log(newColor)
+    // console.log(newColor)
     banner[i].style.color = newColor
   })
   }
