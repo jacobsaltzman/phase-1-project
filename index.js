@@ -123,7 +123,7 @@ function draw() {
 }
 
 addEventListener("mousemove", function(event) {
- //event.preventDefault();
+//  event.preventDefault();
  mouse.x = event.pageX;
  mouse.y = event.pageY;
 });
