@@ -85,6 +85,7 @@ var Dot = function() {
  this.node = (function(){
    var n = document.createElement("div");
    n.className = "trail";
+   n.style.background = randomColor();  //added random color
    document.body.appendChild(n);
    return n;
  }());
