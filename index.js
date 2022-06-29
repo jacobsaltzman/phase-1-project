@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //arrowTrail();
   changeColorOnHover();
   newRandomColorButton();
-
+  addColorToBars()
 });
 
 //function to grab json/api data for colors
@@ -149,12 +149,31 @@ function newRandomColorButton(){
 }
 
 //function to add color to the slide bars
-
+function addColorToBars(){
+  const sliders = document.querySelectorAll('.slider')
+  console.log(sliders)
+  sliders.forEach(slider => {
+    slider.addEventListener("click", function(){
+    console.log("works!")
+    if(slider.id == "myRangeRed"){
+      console.log("red")
+    }
+    if(slider.id == "myRangeGreen"){
+      console.log("green")
+    }
+    if(slider.id == "myRangeBlue"){
+      console.log("blue")
+    }
+  })
+})
+}
   //then function to use that function to add the Red, Green, and Blue seperately 
 
 
 //function to add guess color to the dom
+function addUserColorComboToDiv(){
 
+}
 
 //-submit guess button
 
