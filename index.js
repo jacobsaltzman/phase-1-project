@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("The DOM has loaded");
   getRandomColorFromAPI();
   randomColor();
-  arrowTrail();
+  //arrowTrail();
   changeColorOnHover();
+  newRandomColorButton();
+
 });
 
 //function to grab json/api data for colors
@@ -98,7 +100,7 @@ Dot.prototype.draw = function() {
 };
 
 // Creates the Dot objects, populates the dots array
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 100; i++) {
  var d = new Dot();
  dots.push(d);
 }
@@ -137,6 +139,18 @@ function animate() {
 }
 
 animate();
+}
+
+
+
+  //-submit new random color request button
+function newRandomColorButton(){
+  const newButton = document.getElementById("new-color")
+  newButton.addEventListener("click", () => {
+    const newHue = randomColor();
+    const newBox = document.getElementById("random-color-box")
+    newBox.style.background = newHue
+  })
 }
 
 

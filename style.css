@@ -61,7 +61,7 @@ h1:hover {
   float: left;
   padding: 30px;
   text-align: center;
-  background-color: rgba(50, 50, 50);
+  background: rgba(50, 50, 50);
 }
 
 
@@ -73,6 +73,6 @@ h1:hover {
   float: left;
   padding: 30px;
   text-align: center;
-  background-color: rgba(50, 50, 50);
+  background: rgba(50, 50, 50);
 }
 
