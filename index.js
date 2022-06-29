@@ -46,15 +46,10 @@ function randomColor(){
 }
 
 
-//function to grab random color and its associated RGB and add it to the dom
 
+//functions for all event listeners
 
-
-
-
-//function for all three event listeners
-
-  //-hover color change
+//#1 hover color change
 function changeColorOnHover(){
   const banner = document.getElementsByClassName("banner")
   for (let i = 0; i < banner.length; i++){
@@ -68,7 +63,7 @@ function changeColorOnHover(){
 }
 
 
-  //-arrow trail of colors
+//#2 arrow trail of colors
 
 function arrowTrail(){
 // dots is an array of Dot objects,
@@ -143,7 +138,7 @@ animate();
 
 
 
-  //-submit new random color request button
+//#3 submit new random color request button
 function newRandomColorButton(){
   const newButton = document.getElementById("new-color")
   newButton.addEventListener("click", () => {
@@ -153,11 +148,15 @@ function newRandomColorButton(){
   })
 }
 
+//function to add color to the slide bars
 
+  //then function to use that function to add the Red, Green, and Blue seperately 
 
-  //-submit guess button
 
 //function to add guess color to the dom
+
+
+//-submit guess button
 
 //function to give results (e.g. how close each value was to the random one) and add it to the dom
 
