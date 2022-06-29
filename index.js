@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //arrowTrail();
   changeColorOnHover();
   newRandomColorButton();
-  addColorToBars()
+  addColorToBarsAndDom()
 });
 
 //function to grab json/api data for colors
@@ -49,7 +49,7 @@ function randomColor(){
 
 //functions for all event listeners
 
-//#1 hover color change
+//hover color change
 function changeColorOnHover(){
   const banner = document.getElementsByClassName("banner")
   for (let i = 0; i < banner.length; i++){
@@ -60,9 +60,57 @@ function changeColorOnHover(){
   }
 }
 
+//submit new random color request button
+function newRandomColorButton(){
+  const newButton = document.getElementById("new-color")
+  newButton.addEventListener("click", () => {
+    const newHue = randomColor();
+    const newBox = document.getElementById("random-color-box")
+    newBox.style.background = newHue
+  })
+}
 
-//#2 arrow trail of colors
+//function to add color to the slide bars
+function addColorToBarsAndDom(){
+  const sliders = document.querySelectorAll('.slider')
+  sliders.forEach(slider => {
+    slider.addEventListener("click", function(){
+      const userColorBox = document.getElementById("user-color-box")
+      const redInput = document.getElementById("myRangeRed")
+      const greenInput = document.getElementById("myRangeGreen")
+      const blueInput = document.getElementById("myRangeBlue")
 
+      if(slider.id == "myRangeRed"){
+        slider.style.background = `rgb(${slider.value}, 0, 0)`
+        userColorBox.style.background = `rgb(${slider.value}, ${greenInput.value}, ${blueInput.value})`
+        
+      }
+      if(slider.id == "myRangeGreen"){
+        slider.style.background = `rgb(0, ${slider.value}, 0)`
+        userColorBox.style.background = `rgb(${redInput.value}, ${slider.value}, ${blueInput.value})`
+
+      }
+      if(slider.id == "myRangeBlue"){
+        slider.style.background = `rgb(0, 0, ${slider.value})`
+        userColorBox.style.background = `rgb(${redInput.value}, ${greenInput.value}, ${slider.value})`
+        
+      }
+      
+  })
+})
+}
+  
+
+
+
+//-submit guess button
+
+//function to give results (e.g. how close each value was to the random one) and add it to the dom
+
+
+//functions to be added in later:
+
+//arrow trail of colors
 function arrowTrail(){
   // dots is an array of Dot objects,
   // mouse is an object used to track the X and Y position
@@ -133,46 +181,3 @@ function arrowTrail(){
 
   animate();
 }
-
-
-
-//#3 submit new random color request button
-function newRandomColorButton(){
-  const newButton = document.getElementById("new-color")
-  newButton.addEventListener("click", () => {
-    const newHue = randomColor();
-    const newBox = document.getElementById("random-color-box")
-    newBox.style.background = newHue
-  })
-}
-
-//function to add color to the slide bars
-function addColorToBars(){
-  const sliders = document.querySelectorAll('.slider')
-  sliders.forEach(slider => {
-    slider.addEventListener("click", function(){
-    if(slider.id == "myRangeRed"){
-      slider.style.background = `rgb(${slider.value}, 0, 0)`
-    }
-    if(slider.id == "myRangeGreen"){
-      slider.style.background = `rgb(0, ${slider.value}, 0)`
-    }
-    if(slider.id == "myRangeBlue"){
-      slider.style.background = `rgb(0, 0, ${slider.value})`
-    }
-  })
-})
-}
-  //then function to use that function to add the Red, Green, and Blue seperately 
-
-
-//function to add guess color to the dom
-function addUserColorComboToDiv(){
-
-}
-
-//-submit guess button
-
-//function to give results (e.g. how close each value was to the random one) and add it to the dom
-
-
