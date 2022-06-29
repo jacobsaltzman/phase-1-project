@@ -25,16 +25,19 @@
   <div id="chose-color">
     <div id="red-tuner">Red:
       <div class="slidecontainer">
-      <input type="range" min="0" max="255" value="0" class="slider" id="myRangeRed">
+      <input type="range" min="0" max="255" value="0" class="slider" id="myRangeRed" oninput="numR.value = this.value">
+      <output id="numR">0</output>
     </div></div>
     <div id="green-tuner">Green:
       <div class="slidecontainer">
-        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeGreen">
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeGreen" oninput="numG.value = this.value">
+        <output id="numG">0</output>
       </div>
     </div>
     <div id="blue-tuner">Blue:
       <div class="slidecontainer">
-        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeBlue">
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeBlue" oninput="numB.value = this.value">
+        <output id="numB">0</output>
       </div>
     </div>
     <div id="user-color-box">Your Color</div>

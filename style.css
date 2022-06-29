@@ -104,7 +104,7 @@ h1:hover {
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: gold; /* Gold background */
+  background:rgb(73, 95, 105); /* Gold background */
   cursor: pointer; /* Cursor on hover */
 }
 
