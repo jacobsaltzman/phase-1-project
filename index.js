@@ -149,17 +149,16 @@ function newRandomColorButton(){
 //function to add color to the slide bars
 function addColorToBars(){
   const sliders = document.querySelectorAll('.slider')
-  console.log(sliders)
   sliders.forEach(slider => {
     slider.addEventListener("click", function(){
     if(slider.id == "myRangeRed"){
-      console.log("red")
+      slider.style.background = `rgb(${slider.value}, 0, 0)`
     }
     if(slider.id == "myRangeGreen"){
-      console.log("green")
+      slider.style.background = `rgb(0, ${slider.value}, 0)`
     }
     if(slider.id == "myRangeBlue"){
-      console.log("blue")
+      slider.style.background = `rgb(0, 0, ${slider.value})`
     }
   })
 })
