@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   addColorToBarsAndDom();
   var newColorFromAPI = "";
   submitMatchGuess();
+  getAnswers();
 });
 
 //function to grab json/api data for colors
@@ -124,12 +125,22 @@ function submitMatchGuess(){
   })
 }
 
-//function to give results (e.g. how close each value was to the random one) and add it to the dom
+//secret cheat code
 
+function getAnswers(){
+  const userColorAnswer = document.getElementById("user-color-box")
+  const randomColorAnswer = document.getElementById("random-color-box")
+  randomColorAnswer.addEventListener("copy", ()=>{
+    alert("You Copy Cat!")
+  })
+}
 
 
 
 //functions to be added in later:
+
+//function to give results (e.g. how close each value was to the random one) and add it to the dom
+
 
 //arrow trail of colors
 function arrowTrail(){
