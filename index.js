@@ -117,6 +117,8 @@ function submitMatchGuess(){
   checkButton.addEventListener("click", ()=>{
     if(randomColorSelection.style.background == userColorSelection.style.background){
       alert("Wow, same Hue!")
+      const showGif = document.getElementById("winner")
+      showGif.style.display = "block"
     }
     
   })
