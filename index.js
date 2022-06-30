@@ -132,6 +132,7 @@ function getAnswers(){
   const randomColorAnswer = document.getElementById("random-color-box")
   randomColorAnswer.addEventListener("copy", ()=>{
     alert("You Copy Cat!")
+    userColorAnswer.style.background = randomColorAnswer.style.background;
   })
 }
 
