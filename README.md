@@ -77,6 +77,11 @@ ____________________________________________
 
 
   -http://colormind.io/api-access/ (Random Color Palette API)
+
   -https://www.w3schools.com/howto/howto_js_rangeslider.asp (Range-slider tutorial)
+
   -https://css-tricks.com/css-link-hover-effects/ (Title Bar Rainbow Effect)
+
   -https://codepen.io/falldowngoboone/pen/PwzPYv (Arrow Trail Effect to be used in future rainbow snack game)
+  
+  -https://acegif.com/wp-content/uploads/funny-celebrate-8.gif (Celebration gif for successful match)
