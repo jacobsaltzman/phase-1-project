@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var newColorFromAPI = "";
   submitMatchGuess();
   getAnswers();
-  getRandomCat();
 });
 
 //function to grab json/api data for colors
@@ -134,19 +133,25 @@ function getAnswers(){
   randomColorAnswer.addEventListener("copy", ()=>{
     alert("You Copy Cat!")
     userColorAnswer.style.background = randomColorAnswer.style.background;
+    getRandomCatPic();
+
   })
 }
 
 //fetch cat images from API
 
-function getRandomCat(){
+function getRandomCatPic(){
+  const hiddenImage = document.getElementById("winner")
+
   fetch("https://api.thecatapi.com/v1/images/search")
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
-    console.log(`Holy cow! ${data[0].url}`);
+    // console.log(data);
+    // console.log(`Holy cow! ${data[0].url}`);
+    hiddenImage.src = `${data[0].url}`
+    hiddenImage.style.display = "block";
   });
 }
 
