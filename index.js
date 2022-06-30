@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var newColorFromAPI = "";
   submitMatchGuess();
   getAnswers();
+  getRandomCat();
 });
 
 //function to grab json/api data for colors
@@ -136,7 +137,18 @@ function getAnswers(){
   })
 }
 
+//fetch cat images from API
 
+function getRandomCat(){
+  fetch("https://api.thecatapi.com/v1/images/search")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    console.log(`Holy cow! ${data[0].url}`);
+  });
+}
 
 //functions to be added in later:
 
