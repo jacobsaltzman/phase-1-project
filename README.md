@@ -17,6 +17,7 @@ ____________________________________________
 
 ## How it works for the users:
 
+
  Starting with a bland, black, white, and grey document, users navigate around to bring color to different pieces of the page, illuminating the dom in different ways with various parts of random color. For the game, users can click to create a color at random and then adjust the range of their Red, Green, and Blue primary colors to guess the color values, pressing a button when they think they have a match. Since there are so many (256 x 256 x 256 = 16777216) possibilities, in future additions to the app,  players will obtain points based on how close they get to the original color.
 
 
@@ -53,15 +54,15 @@ ____________________________________________
 ### Future additions:
 
 
-  [ ] Score board stored in JSON.db and placed on the dom
+  [  ] Score board stored in JSON.db and placed on the dom
 
-  [ ] Tutorial alert (e.g. walking through basic colors first, like all Red, White, ect)
+  [  ] Tutorial alert (e.g. walking through basic colors first, like all Red, White, ect)
 
-  [ ] Improved interface, tuner buttons, and sound effects
+  [  ] Improved interface, tuner buttons, and sound effects
 
-  [ ] More messages/scoring describing how close or far the guess was from the random color
+  [  ] More messages/scoring describing how close or far the guess was from the random color
 
-  [ ] Secret rainbow snake game using Dots function
+  [  ] Secret rainbow snake game using Dots function
 
 
 ____________________________________________
