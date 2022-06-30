@@ -1,9 +1,14 @@
 
+/*Start out with a 'darkmode' style page with limited color */
+
 body {
   background-color: black;
   color: white;
  
 }
+
+/*adding a title bar that goes from greyish to rainbow on hover */
+
 h1{
   text-align: center;
   font-family: sans-serif;
@@ -24,6 +29,8 @@ h1{
   background-repeat: no-repeat;
   transition: background-size 100ms;
 }
+
+/*Adding the hover element to achieve the above */
 
 h1:hover {
   background-size: 0 3px, 100% 3px;
@@ -52,6 +59,7 @@ h1:hover {
   background: white
 }
 
+/*setting up a blank box to house user's color div */
 
 #user-color-box {
   width: 250px;
@@ -64,6 +72,7 @@ h1:hover {
   background: rgba(50, 50, 50);
 }
 
+/*setting up a blank box to house random color div */
 
 #random-color-box {
   width: 250px;
@@ -81,6 +90,7 @@ h1:hover {
 }
 
 /* The slider itself */
+
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
@@ -94,11 +104,13 @@ h1:hover {
 }
 
 /* Mouse-over effects */
+
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
