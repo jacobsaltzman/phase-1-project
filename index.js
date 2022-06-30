@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
   //arrowTrail();
   changeColorOnHover();
   newRandomColorButton();
-  addColorToBarsAndDom()
+  addColorToBarsAndDom();
   var newColorFromAPI = "";
-
+  submitMatchGuess();
 });
 
 //function to grab json/api data for colors
@@ -110,7 +110,21 @@ function addColorToBarsAndDom(){
 
 //-submit guess button
 
+function submitMatchGuess(){
+  const checkButton = document.getElementById("check")
+  const userColorSelection = document.getElementById("user-color-box")
+  const randomColorSelection = document.getElementById("random-color-box")
+  checkButton.addEventListener("click", ()=>{
+    if(randomColorSelection.style.background == userColorSelection.style.background){
+      alert("Wow, same Hue!")
+    }
+    
+  })
+}
+
 //function to give results (e.g. how close each value was to the random one) and add it to the dom
+
+
 
 
 //functions to be added in later:
@@ -186,3 +200,8 @@ function arrowTrail(){
 
   animate();
 }
+
+//score board and json.db communication
+
+//sound effects
+
