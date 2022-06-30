@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("The DOM has loaded");
+
   getRandomColorFromAPI();
   randomColor();
   //arrowTrail();
   changeColorOnHover();
   newRandomColorButton();
   addColorToBarsAndDom()
+  var newColorFromAPI = "";
+
 });
 
 //function to grab json/api data for colors
@@ -25,8 +28,10 @@ http.onreadystatechange = function() {
     // console.log(palette)
     // return palette returns array of array values
     const newColor = palette[0]
-    return `rbg(${newColor[0]}, ${newColor[1]}, ${newColor[2]})`
-    
+    function pasteToGlobalColor(){
+      newColorFromAPI = `rbg(${newColor[0]}, ${newColor[1]}, ${newColor[2]})`
+    }
+    pasteToGlobalColor();
 	}
 }
 
