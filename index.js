@@ -121,6 +121,9 @@ function submitMatchGuess(){
       const showGif = document.getElementById("winner")
       showGif.style.display = "block"
     }
+    else{
+      alert("Uh oh, Hue-ge mistake...")
+    }
     
   })
 }
