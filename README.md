@@ -32,7 +32,7 @@ ____________________________________________
 
 
 ### Javascript 
--- Loads dom, grabs a random color from an API or function, listens for user interactions, and updates dom with new colors and results.
+-- Loads dom, grabs a random color from an API or function, listens for user interactions with a **forEach()** on the Nodelist, and updates dom with new colors and results.
 
 
 #### Main event listeners:
