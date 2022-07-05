@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   getRandomColorFromAPI();
   randomColor();
-  //arrowTrail();
   changeColorOnHover();
   newRandomColorButton();
   addColorToBarsAndDom();
   var newColorFromAPI = "";
   submitMatchGuess();
   getAnswers();
+  toggleTail()
 });
 
 //function to grab json/api data for colors
@@ -235,6 +235,13 @@ function arrowTrail(){
   animate();
 }
 
+function toggleTail(){
+  document.addEventListener("keydown", function(event){
+    if (event.code == "KeyS"){
+      arrowTrail()
+    }
+  })
+}
 //score board and json.db communication
 
 //sound effects
