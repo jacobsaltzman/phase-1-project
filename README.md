@@ -42,20 +42,30 @@ ____________________________________________
 
 #### Main event listeners:
 
+
   -hover over banner to create color and effects on individual letters
+
 
   -click and drag the range input (aka tuner) and place color on bar based on value
 
+
   -combine the three inputs into one color and place it in block on the dom
 
+
   -submit guess button to check for match
+
 
   -secret "copy" listener to "cheat" on matching game and reveal cat image
 
 
+  -keydown on "S" key to enter 'secret snake mode' (rainbow arrow tail)
+
+
 #### API Use:
 
+
   -fetch a random color
+
 
   -fetch a random cat image
 
@@ -66,15 +76,20 @@ ____________________________________________
 ### Future additions
 
 
+  [In progress] Secret rainbow snake game using Dots function
+
+
   [  ] Score board stored in JSON.db and placed on the dom
+
 
   [  ] Tutorial alert (e.g. walking through basic colors first, like all Red, White, ect)
 
+
   [  ] Improved interface, tuner buttons, and sound effects
+
 
   [  ] More messages/scoring describing how close or far the guess was from the random color
 
-  [  ] Secret rainbow snake game using Dots function
 
 
 ____________________________________________
@@ -89,7 +104,7 @@ ____________________________________________
 
   -https://css-tricks.com/css-link-hover-effects/ (Title Bar Rainbow Effect)
 
-  -https://codepen.io/falldowngoboone/pen/PwzPYv (Arrow Trail Effect to be used in future rainbow snack game)
+  -https://codepen.io/falldowngoboone/pen/PwzPYv (Arrow Trail Effect to be used in secret snake toggle)
 
   -https://acegif.com/wp-content/uploads/funny-celebrate-8.gif (Celebration gif for successful match)
 
